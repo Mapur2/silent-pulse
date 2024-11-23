@@ -7,6 +7,7 @@ import Navbar from './Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ViewMessages from './Messages'
 import SendMessagePage from './SendMessage'
+import Footer from './Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
           <Route path="/secret/:id" element={<SendMessagePage />} />
           <Route path="/messages/:id" element={<ViewMessages />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )
